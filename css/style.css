@@ -1,0 +1,328 @@
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.accordion {
+  /* --bs-accordion-bg: transparent !important; */
+  opacity: 0.8;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #000000 !important;
+  background-color: transparent !important;
+  /* opacity: 0.8; */
+  box-shadow: none !important;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.accordion-item {
+  border: none;
+  margin-bottom: 20px;
+}
+
+.heading {
+  font-size: 48px;
+  font-weight: 600;
+}
+
+.text-imole-s {
+  color: #DA9D04;
+}
+
+.bg-imole-p0 {
+  background-color: #F8EBCD;
+  color: #4D0105;
+}
+
+.bg-imole-p1 {
+  background-color: #DBCCCD;
+  color: #4D0105;
+}
+
+.bg-imole-p2 {
+  background-color: #D5DFF4;
+  color: #250065;
+}
+
+.bg-imole-p3 {
+  background-color: #DDF4F4;
+  color: #00324B;
+}
+
+.bg-imole-p6 {
+  background-color: #4D0105;
+  color: #ffffff;
+}
+
+.bg-imole-s6 {
+  background-color: #DA9D04;
+  color: #ffffff;
+}
+
+.bg-imole-s7 {
+  background-color: #B68303;
+  color: #ffffff;
+}
+
+.courses .col-md-4 {
+  min-height: 30vh;
+}
+
+.bg-courses {
+  background: radial-gradient(91.11% 221.72% at -1.25% 101.88%, rgba(178, 108, 80, 0.05) 24.76%, rgba(252, 207, 94, 0.05) 59.9%, rgba(218, 157, 4, 0.05) 100%)
+}
+
+.activities .custom-height {
+  min-height: 69vh;
+}
+
+.activities img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.px-custom-5 {
+  padding-left: 3rem !important;
+  padding-right: 3rem !important;
+}
+
+.grid {
+  display: grid;
+  place-items: center;
+  gap: 20px;
+}
+
+.grid-col-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.translate-custom-middle {
+  width: 33% !important;
+  transform: translate(-25%, -75%) !important;
+  opacity: 0.9;
+}
+
+.noise {
+  background-image: url(../assets/noise.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: #4D0105;
+  color: #ffffff;
+  border-radius: 24px;
+  padding: 41px;
+}
+
+.about {
+  background-image: url(../assets/adeleke-osun-gov.png);
+  background-size: inherit;
+  min-height: 760px;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.text-context {
+  width: 75%;
+}
+
+.line-height {
+  line-height: 2;
+}
+
+
+#intro {
+  display: grid;
+  width: 100%;
+  gap: 20px;
+  grid-template-areas:
+    "gridImg gridLogo"
+    "gridImg  gridText";
+  grid-template-rows: 2fr;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+#intro>.grid-img {
+  grid-area: gridImg;
+}
+
+#intro>.grid-logo {
+  grid-area: gridLogo;
+}
+
+#intro>.grid-text {
+  grid-area: gridText;
+}
+
+#intro .grid-logo img {
+  aspect-ratio: 1;
+  object-fit: contain;
+  min-height: 220px;
+}
+
+.hover-shadow:hover {
+  background-color: #ffffff !important;
+  /* box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px; */
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+  transition: 0.2s linear;
+}
+
+@media (min-width: 320px) {
+  .about {
+    min-height: 500px;
+  }
+
+  .custom-h {
+    height: auto;
+  }
+
+  .heading {
+    font-size: 1.5rem;
+  }
+
+  .text-context {
+    width: 100%;
+    font-size: medium;
+  }
+
+  .bg-imole-s7 img {
+    width: 25px;
+  }
+
+  .translate-custom-middle {
+    width: 50% !important;
+    transform: translate(-20%, -80%) !important;
+  }
+
+  #intro {
+    grid-template-areas:
+      "gridImg gridLogo"
+      "gridText gridText";
+  }
+
+  #intro>.grid-img>img {
+    height: 100%;
+  }
+
+  #intro .grid-logo img {
+    min-height: auto;
+  }
+}
+
+@media (min-width: 500px) {
+  .translate-custom-middle {
+    width: 33% !important;
+    transform: translate(-15%, -70%) !important;
+  }
+
+  .custom-h {
+    height: auto;
+  }
+}
+
+@media (min-width: 700px) {
+  .about {
+    min-height: 760px;
+  }
+
+  .heading {
+    font-size: 2rem;
+  }
+
+  .custom-h {
+    height: 100%;
+  }
+
+  .translate-custom-middle {
+    width: 45% !important;
+  }
+
+  .activities .custom-height {
+    min-height: 24vh;
+  }
+
+  .custom-h {
+    height: 100%;
+  }
+
+  .activities .card-title {
+    font-size: 1rem;
+  }
+
+  .hover-activities-a:hover {
+    background-color: #493401 !important;
+    color: #F8EBCD;
+    transition: 0.2s linear;
+  }
+
+  .hover-activities-b:hover {
+    background-color: #1A0002 !important;
+    color: #DBCCCD;
+    transition: 0.2s linear;
+  }
+
+  .hover-activities-c:hover {
+    background-color: #250065 !important;
+    color: #D5DFF4;
+    transition: 0.2s linear;
+  }
+
+  .hover-activities-d:hover {
+    background-color: #00324B !important;
+    color: #F0F0F0;
+    transition: 0.2s linear;
+  }
+
+  .px-custom-5 {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+
+  #intro>.grid-img>img {
+    height: auto;
+  }
+
+  #intro .grid-logo img {
+    aspect-ratio: 1;
+    min-height: 290px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .translate-custom-middle {
+    width: 33% !important;
+  }
+
+  .heading {
+    font-size: 48px;
+  }
+
+  .activities .card-title {
+    font-size: 1.5rem;
+  }
+
+  .px-custom-5 {
+    padding-left: 4rem !important;
+    padding-right: 4rem !important;
+  }
+
+  #intro {
+    grid-template-areas:
+      "gridImg gridLogo"
+      "gridImg  gridText";
+  }
+
+  #intro .grid-logo img {
+    min-height: 200px;
+  }
+}
